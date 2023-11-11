@@ -5,14 +5,12 @@ function dataReverse(data) {
     for (let i = 1; i <= arrQuantity; i++) {
         const innerArr = [];
         for (let j = counter; j < data.length; j++) {
-            console.log("counter at the beginning: " + counter);
             innerArr.push(data[counter]);
             counter++;
             if (innerArr.length == 8) {
                 counter = counter;
                 break;
             }
-            console.log("counter is: " + counter);
         }
         newArr.push(innerArr);
     }
